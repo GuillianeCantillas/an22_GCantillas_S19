@@ -24,18 +24,22 @@ function login() {
   console.log("Password:", password);
   console.log("Role:", role);
 
+  var text;
+
   switch(role) {
-  case "Admin", "admin":
+  case "Admin":
     console.log("Welcome back to the class portal, admin!");
     break;
-  case "Teacher", "teacher":
+  case "Teacher":
     console.log("Thank you for logging in, teacher!");
     break;
-case "Student", "student":
+case "Student":
 	console.log("Welcome to the class portal, student!");
 	break; 
   default:
     console.log("Role out of range.");
+
+    console.log(text)
     }
 }
 
@@ -83,6 +87,3 @@ function calculateAve() {
 }
 
 calculateAve();
-
-	
-
